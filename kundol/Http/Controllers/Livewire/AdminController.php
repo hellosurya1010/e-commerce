@@ -14,4 +14,10 @@ class AdminController extends Controller
         $categories = Category::all();
         return view('admin.owntrade', compact('categories'));
     }
+
+    public function own_trade_store(Request $request){
+        dd($request);
+        $categories = Category::all();
+        return view('admin.owntrade', compact('categories'));
+    }
 }

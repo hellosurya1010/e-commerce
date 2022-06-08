@@ -2,7 +2,8 @@
 
 @section('content')
     <div>
-        <form action="">
+        <form action="{{ route('admin.own_trade_store') }}" method="POST">
+            @csrf
             <div class="row m-4">
                 <div class="col-sm-3">
                     <div class="form-group">

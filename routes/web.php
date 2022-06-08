@@ -137,6 +137,7 @@ Route::group(['middleware' => ['general', 'installer']], function () {
 // Admin
 Route::prefix('admins')->name('admin.')->group(function () {
     Route::get('own-trade', [AdminController::class, 'own_trade'])->name('own_trade');
+    Route::get('own-trade_get', [AdminController::class, 'own_trade_store'])->name('own_trade_store');
 });
 
 Route::prefix('ajax')->name('ajax.')->group(function () {
