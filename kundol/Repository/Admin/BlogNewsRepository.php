@@ -14,6 +14,7 @@ use Illuminate\Support\Collection;
 
 class BlogNewsRepository implements BlogNewsInterface
 {
+    
     use ApiResponser;
 
     public function all()
